@@ -1,0 +1,82 @@
+.shipping-header {
+  position: absolute;
+  left: 330px;
+  top: -1px;
+  color: blue;
+}
+
+.machine-input-position {
+  position: absolute;
+  left: 60px;
+  top: 200px;
+}
+
+.date-picker-position {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+}
+
+.destination-input-position {
+  position: absolute;
+  left: 580px;
+  top: 200px;
+}
+
+.transporter-input-position {
+  position: absolute;
+  left: 830px;
+  top: 200px;
+}
+
+.tire-menu-position {
+  position: absolute;
+  left: 1080px;
+  top: 200px;
+}
+
+.shipping-comment-box {
+  position: absolute;
+  left: 580px;
+  top: 300px;
+  width: 600px;
+}
+
+.comment-box-width {
+  width: 600px;
+}
+
+.variant-checkbox-position {
+  position: absolute;
+  left: 60px;
+  top: 300px;
+  width: 520px;
+}
+
+.checkbox-g0x-variant {
+  position: absolute;
+  left: 120px;
+  top: 46px;
+}
+
+.checkbox-n04-variant {
+  position: absolute;
+  left: 240px;
+  top: 46px;
+}
+
+.checkbox-n06-variant {
+  position: absolute;
+  left: 360px;
+  top: 46px;
+}
+
+.example-section {
+  margin: 12px 0;
+}
+
+.shipping-submit-button {
+  position: absolute;
+  left: 580px;
+  top: 400px;
+}

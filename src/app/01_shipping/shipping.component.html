@@ -1,0 +1,97 @@
+<div class="shipping-header">
+  <h1>Shipping Machines / Headers</h1>
+</div>
+<div class="container">
+    <div class="machine-input-position">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Machine Number</mat-label>
+          <input matInput placeholder="Combine / Head" >
+        </mat-form-field>
+      </form>
+    </div>
+
+    <div class="date-picker-position">
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+   <div class="destination-input-position">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Destination</mat-label>
+          <input matInput placeholder="Destination" >
+        </mat-form-field>
+      </form>
+   </div>
+
+   <div class="transporter-input-position">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Transporter</mat-label>
+          <input matInput placeholder="Destination" >
+        </mat-form-field>
+      </form>
+    </div>
+
+   <div class="tire-menu-position">
+      <button mat-button [matMenuTriggerFor]="menu">Tires / MTS</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>MTS</button>
+        <button mat-menu-item>580/85>R42 2815191.0</button>
+      </mat-menu>
+   </div>
+
+  <div class="shipping-comment-box">
+    <form class="example-form">
+    <mat-form-field class="comment-box-width">
+      <mat-label>Shipping Comment</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    </form>
+  </div>
+
+    <div class="variant-checkbox-position">
+      <section class="example-section" [formGroup]="variants">
+        <h4>Select Variants:</h4>
+        <p><mat-checkbox formControlName="C03_0019">C03 0019</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0065">C03 0065</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0165">C03 0165</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0180">C03 0180</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0183">C03 0183</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0184">C03 0184</mat-checkbox></p>
+        <p><mat-checkbox formControlName="C03_0185">C03 0185</mat-checkbox></p>
+        <div class="checkbox-g0x-variant">
+          <p><mat-checkbox formControlName="G03_0112">G03 0112</mat-checkbox></p>
+          <p><mat-checkbox formControlName="G03_0120">G03 0120</mat-checkbox></p>
+        </div>
+       <div class="checkbox-n04-variant">
+         <p><mat-checkbox formControlName="N04_0595">N04 0595</mat-checkbox></p>
+         <p><mat-checkbox formControlName="N04_0624">N04 0624</mat-checkbox></p>
+         <p><mat-checkbox formControlName="N04_0625">N04 0625</mat-checkbox></p>
+         <p><mat-checkbox formControlName="N04_0626">N04 0626</mat-checkbox></p>
+       </div>
+        <div class="checkbox-n06-variant">
+          <p><mat-checkbox formControlName="N06_0125">N06 0125</mat-checkbox></p>
+        </div>
+      </section>
+
+      <!--
+      <section class="example-section" [formGroup]="variants">
+        <h4>You chose:</h4>
+        {{variants.value | json}}
+      </section>
+      -->
+    </div>
+    <div class="shipping-submit-button">
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+    </div>
+
+</div>
+
+
